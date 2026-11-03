@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentions légales — Smile Fast Food Béziers</title>
+  <meta name="description" content="Mentions légales du site Smile Fast Food Béziers : éditeur, hébergement, propriété intellectuelle, données personnelles et cookies.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F3EDE1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Shared site styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Legal-page-specific overrides (no JS, no animations) -->
+  <style>
+    /* ── Legal layout ── */
+    .legal-wrap {
+      max-width: 768px;
+      margin-inline: auto;
+      padding: 3rem 1rem 4rem;
+    }
+
+    /* Push content below fixed header */
+    .legal-page main {
+      padding-top: 100px;
+    }
+
+    /* ── Page intro ── */
+    .legal-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .legal-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.25rem, 6vw, 3.5rem);
+      letter-spacing: 0.01em;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+
+    .legal-header h1 em {
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--red);
+    }
+
+    .legal-date {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── Sections ── */
+    .legal-section {
+      padding-block: 2rem;
+      border-bottom: 1.5px solid var(--line);
+    }
+
+    .legal-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .legal-section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.125rem, 3vw, 1.375rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    /* Eyebrow counter beside the heading */
+    .legal-section h2 .legal-num {
+      font-family: var(--font-body);
+      font-size: 0.6875rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--red);
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+    /* Body text */
+    .legal-section p,
+    .legal-section address,
+    .legal-section li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+    }
+
+    .legal-section address {
+      font-style: normal;
+    }
+
+    .legal-section ul {
+      margin-top: 0.5rem;
+      padding-left: 1.25rem;
+      list-style: disc;
+    }
+
+    .legal-section li + li {
+      margin-top: 0.35rem;
+    }
+
+    /* Inline links inside legal text */
+    .legal-section a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease;
+    }
+
+    .legal-section a:hover {
+      color: var(--red);
+    }
+
+    .legal-section a:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* Placeholder highlight so they are easy to spot */
+    .placeholder {
+      background: rgba(226, 35, 26, 0.08);
+      color: var(--red);
+      font-style: normal;
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+
+    /* ── Back link ── */
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 2.5rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1.5px solid var(--red);
+      padding-bottom: 3px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .legal-back:hover {
+      color: var(--red);
+    }
+
+    .legal-back:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .legal-back svg {
+      width: 14px;
+      height: 14px;
+      flex: none;
+      /* mirror the arrow icon so it points left */
+      transform: rotate(180deg);
+    }
+
+    /* ── Responsive: slightly larger body text on desktop ── */
+    @media (min-width: 768px) {
+      .legal-section p,
+      .legal-section address,
+      .legal-section li {
+        font-size: 1.125rem;
+      }
+
+      .legal-page main {
+        padding-top: 120px;
+      }
+    }
+  </style>
+
+  <script>
+    /* Add 'js' class for progressive enhancement (same guard as index.html) */
+    document.documentElement.classList.add('js');
+    window.setTimeout(function () {
+      if (!window.__bucketReady) document.documentElement.classList.remove('js');
+    }, 2500);
+  </script>
+</head>
+
+<!-- 'legal-page' class lets CSS target the extra padding without touching index.html -->
+<body class="legal-page">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ══ HEADER — same markup as index.html ══ -->
+  <header class="site-header" id="top">
+    <div class="announcement">
+      <div class="container announcement__inner">
+        <p class="announcement__place">
+          <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+          4 Rue Henri Mestre · Place Henri Mestre · 34500 Béziers
+        </p>
+        <p class="announcement__meta">
+          <span class="status-inline" data-open-status>Ouvert 7j/7</span>
+          <span class="announcement__sep" aria-hidden="true"></span>
+          <a href="tel:+33665526049">06 65 52 60 49</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="nav-wrap">
+      <div class="container nav">
+        <a class="brand" href="index.html#top" aria-label="Smile Fast Food Béziers, retour à l'accueil">
+          <img class="brand__icon" src="assets/img/favicon.svg" alt="" width="40" height="40">
+          <span class="brand__text">
+            <span class="brand__word">SMILE FAST FOOD</span>
+            <span class="brand__sub">Béziers · Snack Bar</span>
+          </span>
+        </a>
+
+        <nav class="nav__links" aria-label="Navigation principale">
+          <a class="nav__link" href="index.html#carte">La carte</a>
+          <a class="nav__link" href="index.html#specialites">Spécialités</a>
+          <a class="nav__link" href="index.html#avis">Les avis</a>
+          <a class="nav__link" href="index.html#resto">Le resto</a>
+          <a class="nav__link" href="index.html#galerie">Galerie</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a class="btn btn--red nav__cta" href="tel:+33665526049">
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <span>Commander</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ MOBILE MENU — same markup as index.html ══ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="brand" href="index.html#top">
+        <img class="brand__icon" src="assets/img/favicon.svg" alt="" width="40" height="40">
+        <span class="brand__text">
+          <span class="brand__word">SMILE FAST FOOD</span>
+          <span class="brand__sub">Béziers · Snack Bar</span>
+        </span>
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Fermer le menu" data-menu-close>
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navigation mobile">
+      <a href="index.html#carte"><span>01</span>La carte</a>
+      <a href="index.html#specialites"><span>02</span>Spécialités</a>
+      <a href="index.html#avis"><span>03</span>Les avis</a>
+      <a href="index.html#resto"><span>04</span>Le resto</a>
+      <a href="index.html#galerie"><span>05</span>Galerie</a>
+      <a href="index.html#commander"><span>06</span>Commander</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a class="mobile-menu__phone" href="tel:+33665526049">06 65 52 60 49</a>
+      <p>4 Rue Henri Mestre<br>34500 Béziers · 7j/7 dès 19h</p>
+    </div>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <main id="main">
+    <div class="legal-wrap">
+
+      <!-- Page heading -->
+      <header class="legal-header">
+        <h1>Mentions <em>légales</em></h1>
+        <p class="legal-date">Dernière mise à jour : 3 novembre 2026</p>
+      </header>
+
+      <!-- 1. Éditeur du site -->
+      <section class="legal-section" aria-labelledby="editeur">
+        <h2 id="editeur"><span class="legal-num" aria-hidden="true">01 —</span>Éditeur du site</h2>
+        <address>
+          <p>
+            <strong>Smile Fast Food Béziers</strong><br>
+            Activité : Fast food / Restauration rapide<br>
+            Adresse : 4 Rue Henri Mestre, 34500 Béziers, France<br>
+            Téléphone : <a href="tel:+33665526049">06 65 52 60 49</a><br>
+            E-mail : <span class="smile-placeholder">[E-MAIL]</span>
+          </p>
+          <p>
+            SIRET : <em class="placeholder">[SIRET en cours d'enregistrement / à renseigner]</em><br>
+            Numéro de TVA intracommunautaire : <em class="placeholder">[FR XX XXX XXX XXX]</em> <small>(si applicable)</small>
+          </p>
+        </address>
+      </section>
+
+      <!-- 2. Directeur de la publication -->
+      <section class="legal-section" aria-labelledby="directeur">
+        <h2 id="directeur"><span class="legal-num" aria-hidden="true">02 —</span>Directeur de la publication</h2>
+        <p>
+          Le directeur de la publication est le responsable légal de <strong>Smile Fast Food</strong>.
+        </p>
+      </section>
+
+      <!-- 3. Hébergement -->
+      <section class="legal-section" aria-labelledby="hebergement">
+        <h2 id="hebergement"><span class="legal-num" aria-hidden="true">03 —</span>Hébergement</h2>
+        <p>Ce site est hébergé par :</p>
+        <address>
+          <p>
+            <strong><em class="placeholder">[Nom de l'hébergeur — ex : Vercel, Netlify, o2switch…]</em></strong><br>
+            <em class="placeholder">[Adresse de l'hébergeur]</em><br>
+            <em class="placeholder">[Ville, Pays]</em>
+          </p>
+        </address>
+      </section>
+
+      <!-- 4. Conception du site -->
+      <section class="legal-section" aria-labelledby="conception">
+        <h2 id="conception"><span class="legal-num" aria-hidden="true">04 —</span>Conception du site</h2>
+        <p>
+          Ce site a été conçu et développé pour le fast food <strong>Smile Fast Food</strong>.
+        </p>
+      </section>
+
+      <!-- 5. Propriété intellectuelle -->
+      <section class="legal-section" aria-labelledby="propriete">
+        <h2 id="propriete"><span class="legal-num" aria-hidden="true">05 —</span>Propriété intellectuelle</h2>
+        <p>
+          L'ensemble du contenu de ce site — textes, photographies, illustrations, logos, icônes,
+          structure graphique et code source — est la propriété exclusive de
+          <strong>Smile Fast Food</strong> ou de ses ayants droit,
+          et est protégé par le droit français de la propriété intellectuelle.
+        </p>
+        <p>
+          Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie
+          des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans
+          l'autorisation écrite préalable de l'éditeur.
+        </p>
+        <p>
+          Les avis clients et photographies sont issus de la fiche Google Business de Smile Fast Food Béziers.
+        </p>
+      </section>
+
+      <!-- 6. Données personnelles -->
+      <section class="legal-section" aria-labelledby="donnees">
+        <h2 id="donnees"><span class="legal-num" aria-hidden="true">06 —</span>Données personnelles</h2>
+        <p>
+          Ce site ne collecte aucune donnée personnelle à caractère identifiant sans votre consentement
+          explicite. Conformément au Règlement général sur la protection des données (RGPD — UE 2016/679)
+          et à la loi Informatique et Libertés, vous disposez des droits suivants :
+        </p>
+        <ul>
+          <li>Droit d'accès à vos données personnelles ;</li>
+          <li>Droit de rectification des données inexactes ;</li>
+          <li>Droit à l'effacement (« droit à l'oubli ») ;</li>
+          <li>Droit à la limitation du traitement ;</li>
+          <li>Droit à la portabilité de vos données ;</li>
+          <li>Droit d'opposition au traitement.</li>
+        </ul>
+        <p>
+          Pour exercer ces droits ou pour toute question relative à la protection de vos données,
+          vous pouvez contacter l'éditeur à l'adresse :
+          <span class="smile-placeholder">[E-MAIL]</span> ou par téléphone au 06 65 52 60 49.
+        </p>
+        <p>
+          Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation
+          auprès de la <abbr title="Commission Nationale de l'Informatique et des Libertés">CNIL</abbr>
+          (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).
+        </p>
+      </section>
+
+      <!-- 7. Cookies -->
+      <section class="legal-section" aria-labelledby="cookies">
+        <h2 id="cookies"><span class="legal-num" aria-hidden="true">07 —</span>Cookies</h2>
+        <p>
+          Ce site n'utilise pas de cookies à des fins de traçage publicitaire ou d'analyse d'audience.
+          Aucun cookie tiers intrusif n'est déposé lors de votre visite.
+        </p>
+        <p>
+          Si vous naviguez avec JavaScript activé, certaines préférences de navigation (onglet de menu
+          sélectionné) peuvent être stockées temporairement en mémoire vive pour fluidifier votre visite.
+        </p>
+      </section>
+
+      <!-- Back link -->
+      <a class="legal-back" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17L17 7M17 7H8M17 7V16"/>
+        </svg>
+        Retour à l'accueil
+      </a>
+
+    </div><!-- /legal-wrap -->
+  </main>
+
+  <!-- ══ FOOTER — same markup as index.html ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="index.html#top">
+            <img class="brand__icon" src="assets/img/favicon.svg" alt="" width="40" height="40">
+            <span class="brand__text">
+              <span class="brand__word">SMILE FAST FOOD</span>
+              <span class="brand__sub">Béziers · Snack Bar</span>
+            </span>
+          </a>
+          <p>Tacos, fast food et prix doux.<br>4 Rue Henri Mestre, 34500 Béziers.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="La carte">
+          <h3>La carte</h3>
+          <a href="index.html#carte" data-menu-target="tacos">Tacos</a>
+          
+          <a href="index.html#carte" data-menu-target="croques">Croques &amp; Wraps</a>
+          <a href="index.html#carte" data-menu-target="formules">Formules 1€–10€</a>
+          <a href="index.html#carte" data-menu-target="tacos">Tacos sucré</a>
+        </nav>
+
+        <nav class="footer__col" aria-label="Le restaurant">
+          <h3>Le resto</h3>
+          <a href="index.html#specialites">Spécialités</a>
+          <a href="index.html#avis">Les avis (4,8★)</a>
+          <a href="index.html#resto">Horaires &amp; accès</a>
+          <a href="index.html#galerie">Galerie</a>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=4+Rue+Henri Mestre+34500+Béziers" target="_blank" rel="noopener">Itinéraire</a>
+        </nav>
+
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <a href="tel:+33665526049">06 65 52 60 49</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=4+Rue+Henri Mestre+34500+Béziers" target="_blank" rel="noopener">4 Rue Henri Mestre<br>34500 Béziers</a>
+          <p>Mer – lun : 19h – 2h<br>Mardi : 19h – 00h</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Smile Fast Food Béziers. Tous droits réservés.</p>
+        <p><a href="mentions-legales.html">Mentions légales</a> · Photos : Google Photos / Restaurant Guru · Avis : Google</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ SVG SPRITE — same as index.html ══ -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M7 17L17 7M17 7H8M17 7V16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+      <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <!-- Shared JS (handles header scroll, mobile menu, open status) -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+{
+  "name": "croqueminute",
+  "version": "1.0.0",
+  "description": "CroqueMinute Béziers — Snack bar, burgers & gratins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["croqueminute", "beziers", "snack", "burger", "gratin"],
+  "author": "CroqueMinute",
+  "license": "ISC"
+}
