@@ -2175,7 +2175,7 @@ figure {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-auto-rows: 160px;
+  grid-auto-rows: 200px;
   gap: 12px;
 }
 
@@ -3327,3 +3327,25 @@ body.lightbox-open {
 /* Smile Fast Food: placeholder blocks and markers until photos and details are added */
 .smile-ph { width: 100%; height: 100%; min-height: 180px; background: linear-gradient(135deg, #e9e2d3, #d8ccb6); }
 .smile-placeholder { background: #f7d774; color: #121110; padding: 0 .3em; font-weight: 700; }
+
+/* Gallery: uniform portrait cards so the photos fit without odd crops */
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: auto;
+}
+
+.gallery-item,
+.gallery-item--tall,
+.gallery-item--wide,
+.gallery-item:nth-child(n) {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  aspect-ratio: 3 / 4;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

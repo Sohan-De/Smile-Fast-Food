@@ -200,7 +200,7 @@
 
         <div class="hero__visual reveal" style="--delay: 160ms">
           <div class="hero__frame">
-            <div class="smile-ph" role="img" aria-label="Tacos et fast food chez Smile Fast Food Béziers"></div>
+            <img src="assets/img/image_002.jpg" alt="Bol de pâtes gratinées Smile Fast Food" decoding="async">
             <span class="hero__frame-label">Place Henri Mestre · Béziers</span>
           </div>
           <div class="hero__sticker" aria-hidden="true">
@@ -263,32 +263,269 @@
             <h2 class="section-title reveal" id="carte-title" style="--delay: 60ms">Nos <em>tacos</em></h2>
           </div>
           <p class="section-intro reveal" style="--delay: 120ms">
-            Tacos garnis à votre choix, avec une option sucrée. Sur place, à emporter, au drive ou en livraison.
+            Tacos, wraps, burgers, raclette, petite faim et desserts. Sur place, à emporter ou en livraison.
           </p>
         </div>
 
         <div class="menu__tabs reveal" role="tablist" aria-label="Catégories de la carte">
           <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-tacos" id="tab-tacos" data-panel="tacos">Tacos</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-wraps" id="tab-wraps" data-panel="wraps" tabindex="-1">Wraps</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-burgers" id="tab-burgers" data-panel="burgers" tabindex="-1">Burgers</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-raclette" id="tab-raclette" data-panel="raclette" tabindex="-1">Raclette &amp; bowl</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-petitefaim" id="tab-petitefaim" data-panel="petitefaim" tabindex="-1">Petite faim</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-desserts" id="tab-desserts" data-panel="desserts" tabindex="-1">Desserts &amp; boissons</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-enfant" id="tab-enfant" data-panel="enfant" tabindex="-1">Menu enfant</button>
         </div>
 
         <div class="menu-panel" id="panel-tacos" role="tabpanel" aria-labelledby="tab-tacos">
           <div class="menu-grid">
             <article class="menu-item">
               <div class="menu-item__top">
-                <h3 class="menu-item__name">Tacos 1 viande seul</h3>
-                <span class="menu-item__price"><span class="smile-placeholder">[PRIX]</span></span>
+                <h3 class="menu-item__name">Tacos 1 viande</h3>
+                <span class="menu-item__price">6€ seul · 8€ menu</span>
               </div>
-              <p class="menu-item__desc">Tacos avec une viande au choix.</p>
+              <p class="menu-item__desc">Poulet tandoori, tenders, nuggets, steak haché ou cordon bleu, au choix.</p>
             </article>
             <article class="menu-item">
               <div class="menu-item__top">
-                <h3 class="menu-item__name">Tacos sucré</h3>
-                <span class="menu-item__price"><span class="smile-placeholder">[PRIX]</span></span>
+                <h3 class="menu-item__name">Tacos 2 viandes</h3>
+                <span class="menu-item__price">7€ seul · 9€ menu</span>
               </div>
-              <p class="menu-item__desc">Tacos sucré, à partager ou à savourer seul.</p>
+              <p class="menu-item__desc">Poulet tandoori, tenders, nuggets, steak haché ou cordon bleu, au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tacos 3 viandes</h3>
+                <span class="menu-item__price">10€ seul · 12€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet tandoori, tenders, nuggets, steak haché ou cordon bleu, au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tacos 4 viandes</h3>
+                <span class="menu-item__price">12€ seul · 14€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet tandoori, tenders, nuggets, steak haché ou cordon bleu, au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tacos 5 viandes</h3>
+                <span class="menu-item__price">14€ seul · 16€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet tandoori, tenders, nuggets, steak haché ou cordon bleu, au choix.</p>
             </article>
           </div>
-          <p class="menu-note">La carte complète et les prix sont à compléter avec la carte réelle.</p>
+          <p class="menu-note">Menu = frites + boisson.</p>
+        </div>
+
+        <div class="menu-panel" id="panel-wraps" role="tabpanel" aria-labelledby="tab-wraps" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wrap 1 viande</h3>
+                <span class="menu-item__price">6€ seul · 8€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet kebab, poulet tikka, steak haché 80g, tenders, nuggets ou cordon bleu, avec crudités et sauce au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wrap 2 viandes</h3>
+                <span class="menu-item__price">7€ seul · 9€ menu</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wrap 3 viandes</h3>
+                <span class="menu-item__price">10€ seul · 12€ menu</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wrap 4 viandes</h3>
+                <span class="menu-item__price">12€ seul · 14€ menu</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wrap 5 viandes</h3>
+                <span class="menu-item__price">14€ seul · 16€ menu</span>
+              </div>
+            </article>
+          </div>
+          <p class="menu-note">Sauces au choix : algérienne, biggy, kebab, mayonnaise, chili thaï, samouraï, blanche, barbecue.</p>
+        </div>
+
+        <div class="menu-panel" id="panel-burgers" role="tabpanel" aria-labelledby="tab-burgers" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Cheeseburger</h3>
+                <span class="menu-item__price">4,50€ seul · 6,50€ menu</span>
+              </div>
+              <p class="menu-item__desc">Steak 80g, cheddar, salade, tomate, oignons, sauce au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Double cheese</h3>
+                <span class="menu-item__price">6,50€ seul · 8,50€ menu</span>
+              </div>
+              <p class="menu-item__desc">2 steaks 80g, double cheddar, salade, tomate, oignons, sauce au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Chicken crispy</h3>
+                <span class="menu-item__price">4,50€ seul · 6,50€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet pané croustillant, cheddar, salade, tomate, sauce au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">3 cheese</h3>
+                <span class="menu-item__price">7,50€ seul · 9€ menu</span>
+              </div>
+              <p class="menu-item__desc">Steak 80g, cheddar, mozzarella, raclette, salade, tomate, oignons, sauce au choix.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Le Smile</h3>
+                <span class="menu-item__price">7€ seul · 9€ menu</span>
+              </div>
+              <p class="menu-item__desc">2 tenders, 2 nuggets, cheddar, salade, tomate, sauce au choix.</p>
+            </article>
+          </div>
+          <p class="menu-note">Menu = frites + boisson 33cl. En menu : +2,00€.</p>
+        </div>
+
+        <div class="menu-panel" id="panel-raclette" role="tabpanel" aria-labelledby="tab-raclette" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Le Smile Raclette</h3>
+                <span class="menu-item__price">7€ seul · 9€ menu</span>
+              </div>
+              <p class="menu-item__desc">Poulet tandoori, fromage raclette, frites à l'intérieur, sauce au choix. Oignons crispy en option.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Bowl Tenders</h3>
+                <span class="menu-item__price">8€</span>
+              </div>
+              <p class="menu-item__desc">Frites, cheddar, sauce fromagère, sauce au choix et tenders.</p>
+            </article>
+          </div>
+          <p class="menu-note">Menu = frites + boisson.</p>
+        </div>
+
+        <div class="menu-panel" id="panel-petitefaim" role="tabpanel" aria-labelledby="tab-petitefaim" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Frites</h3>
+                <span class="menu-item__price">2€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Frites cheddar</h3>
+                <span class="menu-item__price">4,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Nuggets x6</h3>
+                <span class="menu-item__price">4,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tenders x3</h3>
+                <span class="menu-item__price">5€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Wings x6</h3>
+                <span class="menu-item__price">6€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Mozza sticks x3</h3>
+                <span class="menu-item__price">3,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Oignon rings x5</h3>
+                <span class="menu-item__price">4€</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tiramisu</h3>
+                <span class="menu-item__price">3,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Tarte aux Daims</h3>
+                <span class="menu-item__price">3,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Panini Nutella</h3>
+                <span class="menu-item__price">2€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Churros</h3>
+                <span class="menu-item__price">2,50€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Coca-Cola, Fanta, Sprite, Oasis</h3>
+                <span class="menu-item__price">2€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Chistaline (eau)</h3>
+                <span class="menu-item__price">1€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Capri-Sun</h3>
+                <span class="menu-item__price">1€</span>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Lipton pêche</h3>
+                <span class="menu-item__price">2€</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-enfant" role="tabpanel" aria-labelledby="tab-enfant" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-item__top">
+                <h3 class="menu-item__name">Menu enfant</h3>
+                <span class="menu-item__price">6€</span>
+              </div>
+              <p class="menu-item__desc">1 petit cheese burger OU 5 nuggets, frites, Capri-Sun et surprise.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -296,7 +533,7 @@
     <section class="signature" id="specialites" aria-labelledby="bucket-title">
       <div class="container signature__grid">
         <div class="signature__media reveal">
-          <div class="smile-ph" role="img" aria-label="Tacos garnis chez Smile Fast Food Béziers"></div>
+          <img src="assets/img/image_009.jpg" alt="Tacos garni chez Smile Fast Food" loading="lazy" decoding="async">
           <span class="signature__tag">Fait maison</span>
         </div>
         <div class="signature__copy">
@@ -438,10 +675,10 @@
         <div class="about__grid">
           <div class="about__media reveal">
             <div class="about__img about__img--main">
-              <div class="smile-ph" role="img" aria-label="Façade du fast food Smile Fast Food au 4 Rue Henri Mestre à Béziers"></div>
+              <img src="assets/img/image_001.jpg" alt="Façade de Smile Fast Food, rue Henri Mestre à Béziers" loading="lazy" decoding="async">
             </div>
             <div class="about__img about__img--small">
-              <div class="smile-ph" role="img" aria-label="Intérieur et comptoir de Smile Fast Food Béziers"></div>
+              <img src="assets/img/image_003.jpg" alt="Intérieur et comptoir de Smile Fast Food à Béziers" loading="lazy" decoding="async">
             </div>
             <span class="about__sticker">Béziers<br><strong>34500</strong></span>
           </div>
@@ -523,27 +760,27 @@
 
         <div class="gallery-grid">
           <button class="gallery-item gallery-item--tall reveal" type="button" data-caption="Le croustillant et le savoir-faire Smile Fast Food">
-            <div class="smile-ph" role="img" aria-label="Spécialités croustillantes et savoureuses de Smile Fast Food"></div>
+            <img src="assets/img/image_003.jpg" alt="Intérieur de Smile Fast Food à Béziers" loading="lazy" decoding="async">
             <span class="gallery-item__label">Le croustillant</span>
           </button>
           <button class="gallery-item reveal" type="button" data-caption="Tacos garni à la commande">
-            <div class="smile-ph" role="img" aria-label="Tacos garni chez Smile Fast Food"></div>
+            <img src="assets/img/image_006.jpg" alt="Wraps grillés chez Smile Fast Food" loading="lazy" decoding="async">
             <span class="gallery-item__label">Le tacos</span>
           </button>
           <button class="gallery-item gallery-item--tall reveal" type="button" data-caption="La devanture Smile Fast Food au 4 Rue Henri Mestre">
-            <div class="smile-ph" role="img" aria-label="Façade du fast food Smile Fast Food à Béziers"></div>
+            <img src="assets/img/image_010.jpg" alt="Crêpe au chocolat chez Smile Fast Food" loading="lazy" decoding="async">
             <span class="gallery-item__label">Le resto</span>
           </button>
           <button class="gallery-item reveal" type="button" data-caption="Le wrap généreux coupé en deux">
-            <div class="smile-ph" role="img" aria-label="Wrap gourmand Smile Fast Food"></div>
+            <img src="assets/img/image_007.jpg" alt="Burger et frites chez Smile Fast Food" loading="lazy" decoding="async">
             <span class="gallery-item__label">Le wrap</span>
           </button>
           <button class="gallery-item reveal" type="button" data-caption="Salade fraîche et accompagnements">
-            <div class="smile-ph" role="img" aria-label="Accompagnements et salades fraîches"></div>
+            <img src="assets/img/image_011.jpg" alt="Bol de frites et boisson Smile Fast Food" loading="lazy" decoding="async">
             <span class="gallery-item__label">Fraîcheur</span>
           </button>
           <button class="gallery-item gallery-item--wide reveal" type="button" data-caption="Tacos à emporter">
-            <div class="smile-ph" role="img" aria-label="Tacos à emporter"></div>
+            <img src="assets/img/image_009.jpg" alt="Wrap grillé chez Smile Fast Food" loading="lazy" decoding="async">
             <span class="gallery-item__label">À emporter</span>
           </button>
         </div>
